@@ -8,6 +8,7 @@ import { IDocument } from 'src/app/models/IDocument';
 })
 export class CarouselComponent implements OnInit {
   @Input() slides!: IDocument[];
+  currentIndexToShow:number = 0;
   constructor() { }
 
   ngOnInit(): void {
@@ -15,7 +16,18 @@ export class CarouselComponent implements OnInit {
   }
 
   nextImg() {
-
+    if(this.currentIndexToShow < this.slides.length - 1) {
+      this.currentIndexToShow++;
+    }else {
+      this.currentIndexToShow = 0;
+    }
   }
 
+  prevImg() {
+    if(this.currentIndexToShow > 0) {
+      this.currentIndexToShow--;
+    }else {
+      this.currentIndexToShow = this.slides.length - 1;
+    }
+  }
 }
