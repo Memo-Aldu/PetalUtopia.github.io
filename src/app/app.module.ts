@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './component/nav-bar/nav-bar.component';
+import { SearchBarComponent } from './component/search-bar/search-bar.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { CarouselComponent } from './component/carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    SearchBarComponent,
+    HomePageComponent,
+    CarouselComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

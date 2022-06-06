@@ -1,0 +1,28 @@
+#nav-bar {
+    height: 50px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav-top {
+    height: 30px;
+    width: 100%;
+}
+
+#nav-top-text {
+    font-size: 12px;
+    width: 100%;
+}
+.nav-item {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#social-icons {
+    font-size: 20px;
+    font-style: normal;
+    padding: 0px 10px;
+}
