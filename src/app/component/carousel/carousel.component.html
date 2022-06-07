@@ -1,13 +1,13 @@
-<div class="container-xxl py-md-5">
+<div class="container-xxl py-md-5 light">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img [src]="slides[currentIndexToShow].src" class="d-block w-100 rounded img-fluid mx-auto" alt="...">
-            <div class="carousel-caption d-none d-md-block justify-content-start">
-                <h5>{{slides[currentIndexToShow].title}}</h5>
-                <p>{{slides[currentIndexToShow].description}}</p>
+        <div class="carousel-inner" id="carousel-img">
+            <div class="carousel-item active fade-in-image ">
+                <img [src]="slides[currentIndexToShow].src" class="d-block w-100 rounded img-fluid mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block justify-content-start">
+                    <h5>{{slides[currentIndexToShow].title}}</h5>
+                    <p>{{slides[currentIndexToShow].description}}</p>
+                </div>
             </div>
-        </div>
         </div>
         <button class="carousel-control-prev" type="button" (click)="prevImg()">
         <span class="carousel-control-prev-icon"></span>

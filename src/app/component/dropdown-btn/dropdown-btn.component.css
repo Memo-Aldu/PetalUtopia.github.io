@@ -1,0 +1,15 @@
+#drop-item-text {
+    font-size: 15px;
+    width: 100%;
+}
+
+#drop-item-text :hover {
+    color: #ed8bf5;
+}
+
+
+.dropdownBasic1{
+    border-radius: 0;
+    border: 0;
+    z-index: 1;
+}

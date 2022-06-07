@@ -1,0 +1,9 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 py-5" *ngFor="let flowerCardRow of flowerCards">
+        <app-flower-card class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[0]"></app-flower-card>
+        <app-flower-card class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[1]"></app-flower-card>
+        <app-flower-card class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[2]"></app-flower-card>
+      </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+import { IDropDownBtn } from 'src/app/models/IDropDownBtn';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-   navbarOpen: boolean = false;
+   protected navbarOpen: boolean = false;
+   protected occasions: IDropDownBtn = {
+     btnName:  "Occasions",
+     btnNames: ["Anniversary","Birthday", "Wedding", "Get Well", "Thank You"]
+   }
+   protected flowers: IDropDownBtn = {
+    btnName:  "Flowers",
+    btnNames: ["Red Rose","Pink Rose", "White Rose", "Lavender", "Lilly"]
+  }
 
   constructor() { }
 

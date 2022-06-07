@@ -1,8 +1,8 @@
-<!--navbar-->
+
 <div class="container-xxl bg-light py-2" id="nav-top">
     <div class="d-flex" id="nav-top-text">
         <div class="me-auto ">
-            <p class="py-2">
+            <p class=" fw-bold py-2 text-secondary">
                 Ontario's Best Flower Delivery
             </p>
         </div>
@@ -12,18 +12,18 @@
             </p>
         </div>
         <div class="p-2">
-            <a class="fw-bold text-secondary"> 
+            <a class="fw-bold text-secondary text-decoration-none"> 
                 Hours & Locations
             </a>
         </div>
         <div class="p-2">
-            <a class="fw-bold text-secondary"> 
+            <a class="fw-bold text-secondary text-decoration-none"> 
                 Help
             </a>
         </div>
     </div>
 </div>
-<nav class="navbar navbar-expand-md navbar-light bg-light" id="nav-bar">
+<nav class="navbar navbar-expand-md navbar-light bg-light mt-2" id="nav-bar">
     <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
             <span class="fw-bold text-secondary">
@@ -49,20 +49,16 @@
                     </a>
                 </li>
                 <!--Dropdown-->
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <span class="nav-link-text">
-                            Occasions
-                        </span>
-                    </a>
+                <li class="nav-item ">
+                    <div class="nav-link">
+                        <app-dropdown-btn class="nav-link-text" [dropdownBtn]="occasions" ></app-dropdown-btn>
+                    </div>
                 </li>
                 <!--Dropdown-->
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <span class="nav-link-text">
-                            Flowers
-                        </span>
-                    </a>
+                <li class="nav-item ">
+                    <div class="nav-link">
+                        <app-dropdown-btn class="nav-link-text" [dropdownBtn]="flowers" ></app-dropdown-btn>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
