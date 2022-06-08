@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IDocument } from 'src/app/models/IDocument';
 import { IFlowerCard } from 'src/app/models/IFlowerCard';
+import { FlowerFilerServiceService } from 'src/app/services/flower-filer-service.service';
+
 
 @Component({
   selector: 'app-home-page',
@@ -8,6 +10,7 @@ import { IFlowerCard } from 'src/app/models/IFlowerCard';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  protected flowerCards!: IFlowerCard[][];
   protected slides: IDocument[] = [
     {
       src: "assets/homeCarousel/slide-1.jpg",
@@ -25,52 +28,18 @@ export class HomePageComponent implements OnInit {
       description: "hi2."
     }
   ];
-
-  protected flowerCards: IFlowerCard[][] = [
-    [
-      {
-        src: "assets/flower-card/flower-card-1.jpg",
-        title: "Pink Peonies",
-        description: "hi.",
-        price: "49.99"
-      },
-      {
-        src: "assets/flower-card/flower-card-2.jpg",
-        title: "Pink Peonies",
-        description: "hi.",
-        price: "49.99"
-      },
-      {
-        src: "assets/flower-card/flower-card-3.jpg",
-        title: "Pink Peonies",
-        description: "hi.",
-        price: "49.99"
-      }
-  ],
-  [
-    {
-      src: "assets/flower-card/flower-card-4.jpg",
-      title: "Pink Peonies",
-      description: "hi.",
-      price: "49.99"
-    },
-    {
-      src: "assets/flower-card/flower-card-5.jpg",
-      title: "Pink Peonies",
-      description: "hi.",
-      price: "49.99"
-    },
-    {
-      src: "assets/flower-card/flower-card-6.jpg",
-      title: "Pink Peonies",
-      description: "hi.",
-      price: "49.99"
-    }
-]
-  ]
-  constructor() { }
+  constructor(private flowerFilerServiceService: FlowerFilerServiceService) { }
 
   ngOnInit(): void {
+    this.flowerCards = this.flowerFilerServiceService.getCardMatrix(3, 2);
   }
+
+  applyFilter(filter: string) {
+    this.flowerCards = this.flowerFilerServiceService.getFlowerCardsFiltered(3,filter);
+  }
+  
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+ }
 
 }

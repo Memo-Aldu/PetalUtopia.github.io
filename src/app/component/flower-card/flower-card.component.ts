@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { IFlowerCard } from 'src/app/models/IFlowerCard';
 
 @Component({
@@ -7,6 +7,7 @@ import { IFlowerCard } from 'src/app/models/IFlowerCard';
   styleUrls: ['./flower-card.component.css']
 })
 export class FlowerCardComponent implements OnInit {
+
 
   @Input() flowerCard!: IFlowerCard;
   constructor() { }

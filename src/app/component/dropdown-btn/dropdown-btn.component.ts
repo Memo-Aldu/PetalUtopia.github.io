@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 import { IDropDownBtn } from 'src/app/models/IDropDownBtn';
+import { IFlowerCard } from 'src/app/models/IFlowerCard';
+import { FlowerFilerServiceService } from 'src/app/services/flower-filer-service.service';
 
 @Component({
   selector: 'app-dropdown-btn',
@@ -8,9 +10,15 @@ import { IDropDownBtn } from 'src/app/models/IDropDownBtn';
 })
 export class DropdownBtnComponent implements OnInit {
   @Input() dropdownBtn!: IDropDownBtn;
-  constructor() { }
+  @Output() onClickFilter = new EventEmitter<string>();
+
+  constructor(private flowerFilerServiceService: FlowerFilerServiceService) { }
 
   ngOnInit(): void {
+  }
+
+  onFilter(filter: string) {
+    this.onClickFilter.emit(filter)
   }
 
 }

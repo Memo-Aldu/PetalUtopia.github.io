@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,9 @@ import { CarouselComponent } from './component/carousel/carousel.component';
 import { FlowerAlbumComponent } from './component/flower-album/flower-album.component';
 import { FlowerCardComponent } from './component/flower-card/flower-card.component';
 import { DropdownBtnComponent } from './component/dropdown-btn/dropdown-btn.component';
+import { StarRatingsComponent } from './component/star-ratings/star-ratings.component';
+import { PageFooterComponent } from './component/page-footer/page-footer.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +28,17 @@ import { DropdownBtnComponent } from './component/dropdown-btn/dropdown-btn.comp
     FlowerAlbumComponent,
     FlowerCardComponent,
     DropdownBtnComponent,
+    StarRatingsComponent,
+    PageFooterComponent,
+    ServicePageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule,
+    MdbCheckboxModule
 
   ],
   providers: [],

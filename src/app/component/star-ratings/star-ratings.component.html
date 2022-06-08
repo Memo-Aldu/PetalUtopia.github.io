@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-start" *ngIf="starRatings">
+    <div class="" *ngFor="let starType of counter(starRatings.rating)">
+        <em class="{{starType}}"></em>
+    </div>
+    <div class="px-2 text-secondary">
+        <span>{{starRatings.reviews}} Reviews</span>
+    </div>
+</div>
