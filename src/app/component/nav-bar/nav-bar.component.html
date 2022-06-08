@@ -1,45 +1,45 @@
-<div class="sticky-top bg-white">
-    <div class="container-xxl bg-white py-2" id="nav-top">
+<div class=" container-xxl sticky-top bg-dark">
+    <div class="container-xxl" id="nav-top">
         <div class="d-flex" id="nav-top-text">
-            <div class="me-auto ">
-                <p class=" fw-bold py-2 text-secondary">
+            <div class="p-2 me-auto top-left-text">
+                <p class=" fw-bold">
                     Ontario's Best Flower Delivery
                 </p>
             </div>
-            <div class="p-2 d-none d-sm-flex">
-                <p class="fw-bold text-secondary"> 
+            <div class="m-2 d-none d-sm-flex top-right-text">
+                <p class="fw-bold"> 
                     +1 613-555-5555
                 </p>
             </div>
-            <div class="p-2">
-                <a class="fw-bold text-secondary text-decoration-none"> 
+            <div class="m-2">
+                <a class="fw-bold text-decoration-none top-right-text"> 
                     Hours & Locations
                 </a>
             </div>
-            <div class="p-2">
-                <a class="fw-bold text-secondary text-decoration-none"> 
+            <div class="m-2">
+                <a class="fw-bold text-decoration-none top-right-text"> 
                     Help
                 </a>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-md navbar-light bg-light mt-2" id="nav-bar">
-        <div class="container-xxl">
+    <nav class="navbar navbar-expand-md navbar-dark mt-2" id="nav-bar">
+        <div class="container-xxl bg-dark">
             <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-secondary">
+                <span class="fw-bold">
                     <em class="bi bi-book"></em>
                     Memo's Story
                 </span>
             </a>
             <!--toggle button for mobile nav-->
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" 
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" 
             data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
             aria-label="Toggle navigation" (click)="toggleNavbar()">
             <span class="navbar-toggler-icon"></span>
             </button>
     
         <!--navbar links-->
-            <div class="collapse navbar-collapse justify-content-lg-start justify-content-md-end pt-2  bg-light" id="main-nav" [ngClass]="{'d-block' : navbarOpen }">
+            <div class="collapse navbar-collapse justify-content-lg-start justify-content-md-end pt-2" id="main-nav" [ngClass]="{'d-block' : navbarOpen }">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a routerLink="" class="nav-link">
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li class="nav-item ms-2 d-none d-md-inline">
-                        <a href="#" class="btn btn-secondary">
+                        <a href="#" class="nav-link">
                             <span class="nav-link-text">
                                 About Us
                             </span>

@@ -17,6 +17,7 @@ import { DropdownBtnComponent } from './component/dropdown-btn/dropdown-btn.comp
 import { StarRatingsComponent } from './component/star-ratings/star-ratings.component';
 import { PageFooterComponent } from './component/page-footer/page-footer.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { ServiceCardsComponent } from './component/service-cards/service-cards.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ServicePageComponent } from './pages/service-page/service-page.componen
     StarRatingsComponent,
     PageFooterComponent,
     ServicePageComponent,
+    ServiceCardsComponent,
   ],
   imports: [
     BrowserModule,

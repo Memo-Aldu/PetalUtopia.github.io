@@ -13,8 +13,21 @@
 #nav-top-text {
     font-size: 12px;
     width: 100%;
+    padding-top: 7px;
 }
-.nav-item {
+.top-right-text {
+    color: #ed8bf5;
+}
+
+.top-left-text {
+    color: #ffffff;
+}
+
+.nav-link-text {
+    color: #ffffff;
+}
+
+#nav-link {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
@@ -22,7 +35,18 @@
 
 
 #social-icons {
-    font-size: 20px;
     font-style: normal;
     padding: 0px 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-color: #fc5356;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
 }
+
+  .feature-box-1 .icon em {
+    line-height: 70px;
+  }
