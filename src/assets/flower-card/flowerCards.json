@@ -2,7 +2,7 @@
       {
         "src": "assets/flower-card/flower-card-1.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec.",
         "price": "49.99",
         "rating": {
           "rating": 5,
@@ -14,7 +14,7 @@
       {
         "src": "assets/flower-card/flower-card-2.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "55.99",
         "rating": {
           "rating": 5,
@@ -26,7 +26,7 @@
       {
         "src": "assets/flower-card/flower-card-3.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "79.99",
         "rating": {
           "rating": 4.5,
@@ -38,7 +38,7 @@
     {
       "src": "assets/flower-card/flower-card-4.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "64.99",
       "rating": {
         "rating": 5,
@@ -50,7 +50,7 @@
     {
       "src": "assets/flower-card/flower-card-5.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "75.99",
       "rating": {
         "rating": 4,
@@ -62,7 +62,7 @@
     {
       "src": "assets/flower-card/flower-card-6.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "60.99",
       "rating": {
         "rating": 4.5,
@@ -75,7 +75,7 @@
     {
         "src": "assets/flower-card/flower-card-7.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "49.99",
         "rating": {
           "rating": 5,
@@ -87,7 +87,7 @@
       {
         "src": "assets/flower-card/flower-card-8.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "76.99",
         "rating": {
           "rating": 5,
@@ -99,7 +99,7 @@
       {
         "src": "assets/flower-card/flower-card-9.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "89.99",
         "rating": {
           "rating": 4.5,
@@ -111,7 +111,7 @@
     {
       "src": "assets/flower-card/flower-card-10.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "64.99",
       "rating": {
         "rating": 5,
@@ -123,7 +123,7 @@
     {
       "src": "assets/flower-card/flower-card-11.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "79.99",
       "rating": {
         "rating": 5,
@@ -135,7 +135,7 @@
     {
       "src": "assets/flower-card/flower-card-12.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "64.99",
       "rating": {
         "rating": 5,
@@ -148,7 +148,7 @@
     {
         "src": "assets/flower-card/flower-card-13.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "49.99",
         "rating": {
           "rating": 5,
@@ -160,7 +160,7 @@
       {
         "src": "assets/flower-card/flower-card-14.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "45.99",
         "rating": {
           "rating": 5,
@@ -172,7 +172,7 @@
       {
         "src": "assets/flower-card/flower-card-15.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "79.99",
         "rating": {
           "rating": 4.5,
@@ -184,7 +184,7 @@
     {
       "src": "assets/flower-card/flower-card-16.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "60.99",
       "rating": {
         "rating": 5,
@@ -196,7 +196,7 @@
     {
       "src": "assets/flower-card/flower-card-17.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "79.99",
       "occasion": ["wedding", "anniversary", "birthday"],
       "flowerType":"white rose"
@@ -204,7 +204,7 @@
     {
       "src": "assets/flower-card/flower-card-18.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "64.99",
       "occasion": ["wedding"],
       "flowerType":"pink rose"
@@ -213,7 +213,7 @@
     {
         "src": "assets/flower-card/flower-card-19.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "49.99",
         "rating": {
           "rating": 5,
@@ -225,7 +225,7 @@
       {
         "src": "assets/flower-card/flower-card-20.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "55.99",
         "rating": {
           "rating": 4.5,
@@ -237,7 +237,7 @@
       {
         "src": "assets/flower-card/flower-card-21.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "79.99",
         "rating": {
           "rating": 4.5,
@@ -249,7 +249,7 @@
     {
       "src": "assets/flower-card/flower-card-22.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "60.99",
       "rating": {
         "rating": 0,
@@ -261,7 +261,7 @@
     {
       "src": "assets/flower-card/flower-card-23.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "79.99",
       "occasion": ["birthday"],
       "flowerType":"other"
@@ -269,7 +269,7 @@
     {
       "src": "assets/flower-card/flower-card-24.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "63.00",
       "occasion": ["birthday", "anniversary"],
       "flowerType":"daisy"
@@ -277,7 +277,7 @@
     {
         "src": "assets/flower-card/flower-card-15.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "49.99",
         "rating": {
           "rating": 5,
@@ -289,7 +289,7 @@
       {
         "src": "assets/flower-card/flower-card-26.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "55.99",
         "rating": {
           "rating": 5,
@@ -301,7 +301,7 @@
       {
         "src": "assets/flower-card/flower-card-27.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "79.99",
         "rating": {
           "rating": 4.5,
@@ -313,7 +313,7 @@
     {
       "src": "assets/flower-card/flower-card-28.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "61.99",
       "rating": {
         "rating": 3.5,
@@ -325,7 +325,7 @@
     {
         "src": "assets/flower-card/flower-card-29.jpg",
         "title": "Pink Peonies",
-        "description": "hi.",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
         "price": "44.99",
         "rating": {
           "rating": 4.5,
@@ -337,7 +337,7 @@
     {
       "src": "assets/flower-card/flower-card-30.jpg",
       "title": "Pink Peonies",
-      "description": "hi.",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
       "price": "64.99",
       "rating": {
         "rating": 5,

@@ -2,10 +2,10 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 mx-lg-0 mx-md-5 mx-3" *ngFor="let flowerCardRow of flowerCards">
           <div *ngIf="flowerCardRow[0] !== undefined" class="">
-            <app-flower-card  class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[0]"></app-flower-card>
+            <app-flower-card class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[0]"></app-flower-card>
           </div>
           <div *ngIf="flowerCardRow[1] !== undefined" class="">
-            <app-flower-card *ngIf="flowerCardRow[1].src" class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[1]"></app-flower-card>
+            <app-flower-card  *ngIf="flowerCardRow[1]" class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[1]"></app-flower-card>
           </div>
           <div *ngIf="flowerCardRow[2] !== undefined" class="">
             <app-flower-card *ngIf="flowerCardRow[2]" class="py-lg-1 py-5" [flowerCard]= "flowerCardRow[2]"></app-flower-card>

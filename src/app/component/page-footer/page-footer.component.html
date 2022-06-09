@@ -3,29 +3,33 @@
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
           <h5>LOCATIONS</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a href="#" class="nav-link p-0 text-muted"> 912 Bank St ON</a></li>
-            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Ottawa K5F 0D2</a></li>
-            <li class="nav-item"><a href="#" class="nav-link p-0 text-muted"> 412 Hunter St ON</a></li>
-            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Kanata F5A 5E2</a></li>
+          <ul routerLink="/about" class="nav flex-column">
+            <li class="nav-item"><a class="nav-link p-0">
+              <span> 912 Bank St ON</span>
+              <p>Ottawa K5F 0D2</p></a>
+            </li>
+            <li class="nav-item mb-3"><a class="nav-link p-0">
+              <span> 412 Hunter St ON</span>
+              <p>Kanata F5A 5E2</p></a>
+            </li>
           </ul>
         </div>
 
         <div class="col-6 col-md-2 mb-3">
             <h5>OPENING HOURS</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">WEEKDAYS 9:00-20:00</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SATURDAY 9:00-18:00</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SUNDAY 9:00-16:00</a></li>
+            <ul routerLink="/about" class="nav flex-column">
+              <li class="nav-item mb-3"><a class="nav-link p-0">WEEKDAYS 9:00-20:00</a></li>
+              <li class="nav-item mb-3"><a class="nav-link p-0 ">SATURDAY 9:00-18:00</a></li>
+              <li class="nav-item mb-3"><a class="nav-link p-0 ">SUNDAY 9:00-16:00</a></li>
             </ul>
           </div>
   
         <div class="col-6 col-md-2 mb-3">
           <h5>SERVICES</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Flower Delivery</a></li>
-            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Event Planning</a></li>
-            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">In-store flower pick-up</a></li>
+          <ul   routerLink="/services" class="nav flex-column">
+            <li class="nav-item mb-3"><a class="nav-link p-0">Flower Delivery</a></li>
+            <li class="nav-item mb-3"><a class="nav-link p-0 ">Event Planning</a></li>
+            <li class="nav-item mb-3"><a class="nav-link p-0 ">In-store flower pick-up</a></li>
           </ul>
         </div>
         <div class="col-md-5 offset-md-1 mb-3">
@@ -46,7 +50,7 @@
         </div>
       </div>
   
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <div class="d-flex flex-column flex-sm-row justify-content-between pt-3 border-top">
         <p>© 2022 Company, Inc. All rights reserved.</p>
         <!--social icons-->
         <ul class="list-unstyled d-flex">

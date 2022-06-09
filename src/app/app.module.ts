@@ -18,6 +18,9 @@ import { StarRatingsComponent } from './component/star-ratings/star-ratings.comp
 import { PageFooterComponent } from './component/page-footer/page-footer.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { ServiceCardsComponent } from './component/service-cards/service-cards.component';
+import { AboutPageComponent } from './pages/about/about-page.component';
+import { LocationCardComponent } from './component/location-card/location-card.component';
+import { ModalComponent } from './component/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { ServiceCardsComponent } from './component/service-cards/service-cards.c
     PageFooterComponent,
     ServicePageComponent,
     ServiceCardsComponent,
+    AboutPageComponent,
+    LocationCardComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { IFlowerCard } from 'src/app/models/IFlowerCard';
+import {NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-flower-album',
@@ -8,12 +10,12 @@ import { IFlowerCard } from 'src/app/models/IFlowerCard';
 })
 export class FlowerAlbumComponent implements OnInit {
 
+  protected selectedFlowerCard!: IFlowerCard;
   @Input() flowerCards!: IFlowerCard[][];
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.flowerCards);
   }
 
 

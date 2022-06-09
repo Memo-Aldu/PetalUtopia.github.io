@@ -1,5 +1,8 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IFlowerCard } from 'src/app/models/IFlowerCard';
+import {SharedService} from 'src/app/services/shared.service';
+import { ModalService } from 'src/app/services/modal.service';
+
 
 @Component({
   selector: 'app-flower-card',
@@ -8,12 +11,18 @@ import { IFlowerCard } from 'src/app/models/IFlowerCard';
 })
 export class FlowerCardComponent implements OnInit {
 
-
   @Input() flowerCard!: IFlowerCard;
-  constructor() { }
+  constructor(private sharedFlower: SharedService, 
+              private modalService: ModalService) {
+   }
 
   ngOnInit(): void {
-    console.log(this.flowerCard.src);
+    console.log(this.flowerCard);
+  }
+
+  onClickMoreInfo() {
+    this.sharedFlower.changeCard(this.flowerCard);
+    this.modalService.open("more-flower-info");
   }
 
 }

@@ -15,7 +15,7 @@ export class NavBarComponent implements OnInit {
    }
    protected flowers: IDropDownBtn = {
     btnName:  "Flowers",
-    btnNames: ["Red Rose","Pink Rose", "White Rose", "Daisy", "Lilly"]
+    btnNames: ["Red Rose","Pink Rose", "White Rose", "Daisy", "Lilly","Other"]
   }
 
   constructor() { }

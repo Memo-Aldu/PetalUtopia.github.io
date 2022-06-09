@@ -1,0 +1,38 @@
+<div id="home-top"></div>
+<app-nav-bar (onClickFilter)="applyFilter($event)"></app-nav-bar>
+<app-search-bar class=""></app-search-bar>
+
+<section id="intro">
+    <div class="container-md justify-content-between align-items-center py-5">
+        <div class="row g-0">
+            <div class="col-xl-6 col-12 container-md">
+                <div class="row">
+                    <div class="col d-flex">
+                            <div class="section-title">
+                                <h2>Where To Find Us</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae explicabo ab similique delectus provident nobis voluptatem nemo minus quidem?</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row d-flex">
+                    <app-location-card [location]="locations[0]"></app-location-card>
+                </div>
+                <div class="row d-flex">
+                    <app-location-card [location]="locations[1]"></app-location-card>
+                </div>
+            </div>
+            <div class="col-xl-6 col-12 ">
+                <div class="container-md d-flex">
+                    <iframe width="700" height="570" src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0"
+                        style="border:0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="home-footer">
+    <app-page-footer></app-page-footer>
+</section>

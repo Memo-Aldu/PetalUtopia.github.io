@@ -2,6 +2,14 @@
     background-color: #ed8bf5;
 }
 
+.nav-link:hover {
+    color: #ed8bf5;
+}
+
+.nav-link {
+    color: #8a878a;
+}
+
 footer:hover {
     animation:bounce-top .9s both
 }
