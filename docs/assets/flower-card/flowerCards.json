@@ -1,0 +1,349 @@
+[
+      {
+        "src": "assets/flower-card/flower-card-1.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec.",
+        "price": 49.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 18
+        },
+        "occasion": ["birthday","get well", "thank you"],
+        "flowerType":"white rose"
+      },
+      {
+        "src": "assets/flower-card/flower-card-2.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 55.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 33
+        },
+        "occasion": ["anniversary"],
+        "flowerType":"red rose"
+      },
+      {
+        "src": "assets/flower-card/flower-card-3.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 79.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 60
+        },
+        "occasion": ["birthday","get well", "thank you"],
+        "flowerType":"daisy"
+      },
+    {
+      "src": "assets/flower-card/flower-card-4.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 64.99,
+      "rating": {
+        "rating": 5,
+        "reviews": 60
+      },
+      "occasion": ["get well", "thank you"],
+      "flowerType":"other"
+    },
+    {
+      "src": "assets/flower-card/flower-card-5.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 75.99,
+      "rating": {
+        "rating": 4,
+        "reviews": 32
+      },
+      "occasion": ["get well", "thank you"],
+      "flowerType":"daisy"
+    },
+    {
+      "src": "assets/flower-card/flower-card-6.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 60.99,
+      "rating": {
+        "rating": 4.5,
+        "reviews": 32
+      },
+      "occasion": ["wedding", "anniversary"],
+      "flowerType":"pink rose"
+      
+    },
+    {
+        "src": "assets/flower-card/flower-card-7.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 49.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 18
+        },
+        "occasion": ["birthday","thank you", "anniversary"],
+        "flowerType":"pink rose"
+      },
+      {
+        "src": "assets/flower-card/flower-card-8.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 76.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 36
+        },
+        "occasion": ["wedding"],
+        "flowerType":"white rose"
+      },
+      {
+        "src": "assets/flower-card/flower-card-9.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 89.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 60
+        },
+        "occasion": ["wedding"],
+        "flowerType":"white rose"
+      },
+    {
+      "src": "assets/flower-card/flower-card-10.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 64.99,
+      "rating": {
+        "rating": 5,
+        "reviews": 35
+      },
+      "occasion": ["get well", "thank you", "anniversary"],
+      "flowerType":" other"
+    },
+    {
+      "src": "assets/flower-card/flower-card-11.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 79.99,
+      "rating": {
+        "rating": 5,
+        "reviews": 74
+      },
+      "occasion": ["get well", "thank you", "anniversary","birthday"],
+      "flowerType":" daisy"
+    },
+    {
+      "src": "assets/flower-card/flower-card-12.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 64.99,
+      "rating": {
+        "rating": 5,
+        "reviews": 60
+      },
+      "occasion": ["anniversary"],
+      "flowerType":" red rose"
+    },
+
+    {
+        "src": "assets/flower-card/flower-card-13.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 49.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 18
+        },
+        "occasion": ["wedding"],
+        "flowerType":"white-rose"
+      },
+      {
+        "src": "assets/flower-card/flower-card-14.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 45.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 13
+        },
+        "occasion": ["get well"],
+        "flowerType":"daisy"
+      },
+      {
+        "src": "assets/flower-card/flower-card-15.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 79.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 60
+        },
+        "occasion": ["anniversary"],
+        "flowerType":"pink rose"
+      },
+    {
+      "src": "assets/flower-card/flower-card-16.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 60.99,
+      "rating": {
+        "rating": 5,
+        "reviews": 74
+      },
+      "occasion": ["anniversary"],
+      "flowerType":"red rose"
+    },
+    {
+      "src": "assets/flower-card/flower-card-17.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 79.99,
+      "occasion": ["wedding", "anniversary", "birthday"],
+      "flowerType":"white rose"
+    },
+    {
+      "src": "assets/flower-card/flower-card-18.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 64.99,
+      "occasion": ["wedding"],
+      "flowerType":"pink rose"
+    },
+
+    {
+        "src": "assets/flower-card/flower-card-19.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 49.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 18
+        },
+        "occasion": ["birthday","thank you", "get well"],
+        "flowerType":"other"
+      },
+      {
+        "src": "assets/flower-card/flower-card-20.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 55.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 30
+        },
+        "occasion": ["birthday","anniversary"],
+        "flowerType":"daisy"
+      },
+      {
+        "src": "assets/flower-card/flower-card-21.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 79.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 60
+        },
+        "occasion": ["wedding", "anniversary"],
+        "flowerType":"white rose"
+      },
+    {
+      "src": "assets/flower-card/flower-card-22.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 60.99,
+      "rating": {
+        "rating": 0,
+        "reviews": 0
+      },
+      "occasion": ["birthday"],
+      "flowerType":"daisy"
+    },
+    {
+      "src": "assets/flower-card/flower-card-23.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 79.99,
+      "occasion": ["birthday"],
+      "flowerType":"other"
+    },
+    {
+      "src": "assets/flower-card/flower-card-24.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 63.00,
+      "occasion": ["birthday", "anniversary"],
+      "flowerType":"daisy"
+    },
+    {
+        "src": "assets/flower-card/flower-card-15.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 49.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 18
+        },
+        "occasion": ["birthday","anniversary"],
+        "flowerType":"lilly"
+      },
+      {
+        "src": "assets/flower-card/flower-card-26.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 55.99,
+        "rating": {
+          "rating": 5,
+          "reviews": 33
+        },
+        "occasion": ["thank you","get well"],
+        "flowerType":"daisy"
+      },
+      {
+        "src": "assets/flower-card/flower-card-27.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 79.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 60
+        },
+        "occasion": ["anniversary", "wedding"],
+        "flowerType":"pink rose"
+      },
+    {
+      "src": "assets/flower-card/flower-card-28.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 61.99,
+      "rating": {
+        "rating": 3.5,
+        "reviews": 54
+      },
+      "occasion": ["wedding"],
+      "flowerType":"other"
+    },
+    {
+        "src": "assets/flower-card/flower-card-29.jpg",
+        "title": "Pink Peonies",
+        "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+        "price": 44.99,
+        "rating": {
+          "rating": 4.5,
+          "reviews": 68
+        },
+        "occasion": ["anniversary","thank you"],
+        "flowerType":"pink rose"
+      },
+    {
+      "src": "assets/flower-card/flower-card-30.jpg",
+      "title": "Pink Peonies",
+      "description": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque auguesodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec..",
+      "price": 64.99,
+      "rating": {
+        "rating": 5,
+        "reviews": 120
+      },
+        "occasion": ["birthday"],
+        "flowerType":"other"
+    }
+]

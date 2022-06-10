@@ -17,7 +17,6 @@ export class FlowerCardComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    console.log(this.flowerCard);
   }
 
   onClickMoreInfo() {

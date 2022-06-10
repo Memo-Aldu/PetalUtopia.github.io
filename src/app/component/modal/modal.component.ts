@@ -36,7 +36,6 @@ export class ModalComponent implements OnInit, AfterViewInit {
     this.sharedFlower.currentCard.subscribe(flowerCard => this.flowerCard = flowerCard);
     this.cartService.getProducts().subscribe(cart => this.cart = cart);
     let modal = this;
-    console.log(this.quantity);
 
     // ensure id attribute exists
     if (!this._id) {
@@ -45,7 +44,6 @@ export class ModalComponent implements OnInit, AfterViewInit {
     }
     // add self (this modal instance) to the modal service so it's accessible from controllers
     this.modalService.next(this);
-    console.log(this.flowerCard);
   }
 
   ngOnDestroy(): void {

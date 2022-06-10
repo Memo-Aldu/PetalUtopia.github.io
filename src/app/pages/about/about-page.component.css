@@ -110,20 +110,8 @@
       border-left-color:#ed8bf5;
   }
   
-  
-  .member-content .details:before {
-      display:block;
-      content:"\201D";
-      position:absolute;
-      left:20px;
-      top:50px;
-      font-size:120px;
-      font-weight:800;
-      line-height:60px;
-      font-family:Arial;
-      color:#5cc9df;
-      -webkit-transition:all .3s ease-out;
-      transition:all .3s ease-out;
+  .member-content.right:hover .details:after {
+      border-right-color:#ed8bf5;
   }
   
   .member-content:hover .details:before {
