@@ -3,7 +3,9 @@ import { NgbModalConfig, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-
 import { SharedService } from 'src/app/services/shared.service';
 import { IFlowerCard } from 'src/app/models/IFlowerCard';
 import { IStarRating } from 'src/app/models/IStarRating';
+import { IProduct } from 'src/app/models/IProduct';
 import { ModalService } from 'src/app/services/modal.service';
+import { CartService } from 'src/app/services/cart.service';
 
 
 @Component({
@@ -16,26 +18,26 @@ export class ModalComponent implements OnInit, AfterViewInit {
 
   @ViewChild("content", { static: true }) content!: ElementRef;
   @Input() _id!: string;
-  private element: any;
+ quantity: number = 1;
+
+ cart: IProduct[] = [];
 
   flowerCard!: IFlowerCard;
-  protected starRating: IStarRating = {
-    rating: 4.5,
-    reviews: 10,
-  }
   constructor(private sharedFlower: SharedService,
               private modalService: ModalService,
+              private cartService: CartService,
               private ngbModelService: NgbModal,
               private el: ElementRef,
               config: NgbModalConfig ) {
     // customize default values of modals used by this component tree
-    this.element = el.nativeElement;
     config.backdrop = 'static';
     config.keyboard = false;
   }
   ngOnInit(): void {
     this.sharedFlower.currentCard.subscribe(flowerCard => this.flowerCard = flowerCard);
+    this.cartService.getProducts().subscribe(cart => this.cart = cart);
     let modal = this;
+    console.log(this.quantity);
 
     // ensure id attribute exists
     if (!this._id) {
@@ -49,17 +51,28 @@ export class ModalComponent implements OnInit, AfterViewInit {
 
   ngOnDestroy(): void {
     this.modalService.remove(this._id);
-    this.element.remove();
 }
 
   ngAfterViewInit() {
-    console.log(this.content.nativeElement.value);
   }
-
 
   open(): void {
     this.ngbModelService.open(this.content, {size: "xl"})
   }
+
+  onClickAddToCart() {
+    this.quantity = Math.floor(this.quantity);
+    if(this.quantity > 0) {
+      let price = Math.round((this.flowerCard.price * this.quantity) * 100) / 100;
+      let product: IProduct = {
+        item: this.flowerCard,
+        quantity: +this.quantity,
+        price: price
+    };
+      this.cartService.addProduct(product);
+
+    }
+}
 
 
 }

@@ -4,7 +4,7 @@ export interface IFlowerCard {
     src: string;
     title: string;
     description: string;
-    price: string;
+    price: number;
     rating?: IStarRating;
     occasion: string[];
     flowerType: string;

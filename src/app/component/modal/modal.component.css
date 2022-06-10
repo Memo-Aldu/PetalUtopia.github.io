@@ -15,9 +15,6 @@ body{
     background: #fff
 }
 
-.product-content .carousel-control.left {
-    margin-left: 0
-}
 
 .product-content .product-image {
     background-color: #fff;
@@ -146,9 +143,6 @@ body{
     line-height: 20px
 }
 
-.product-info.smart-form .rating label {
-    margin-top: 0
-}
 
 .product-wrap .product-image span.tag2 {
     position: absolute;
@@ -206,10 +200,6 @@ body{
     padding: 0 0 5px!important
 }
 
-.product-deatil .carousel-control.left,
-.product-deatil .carousel-control.right {
-    background: none!important
-}
 
 .product-deatil .glyphicon {
     color: #3276b1

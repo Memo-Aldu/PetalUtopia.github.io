@@ -9,7 +9,7 @@
         <!-- product -->
         <div class="product-content product-wrap clearfix product-deatil">
             <div class="row">
-                <div class=" container col-md-5 col-sm-12 col-xs-12">
+                <div class=" container col-lg-5 col-12">
                     <div class="product-image">
                         <div class="d-block w-100 rounded img-fluid mx-auto" id="card-img">
                             <img [src]="flowerCard.src" alt="" class="card-img-top" height="350" >
@@ -17,7 +17,7 @@
                     </div>
                 </div>
     
-                <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-offset-1 col-12">
                     <h2 class="name">
                         {{flowerCard.title}}
                     </h2>
@@ -27,7 +27,6 @@
                     <hr />
                     <h3 class="price-container">
                         {{flowerCard.price}}$
-                        <small>*includes tax</small>
                     </h3>
                     <div class="certified">
                         <ul>
@@ -54,13 +53,13 @@
                     </div>
                     <hr />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <a href="javascript:void(0);" class="btn btn-success btn-lg">Add to cart ($129.54)</a>
+                        <div class="col-6">
+                            <a (click)= "onClickAddToCart()"  (click)="modal.dismiss('Cross click')" class="btn btn-success btn-lg">Add to cart</a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <div class="btn-group pull-right">
-                                <button class="btn btn-white btn-default"><i class="fa fa-star"></i> Add to wishlist</button>
-                                <button class="btn btn-white btn-default"><i class="fa fa-envelope"></i> Contact Seller</button>
+                        <div class="col-6">
+                            <div class="d-flex ms-3 ">
+                            <label class=" mx-2 mt-1" for="quantity">Quantity: </label>
+                            <input style="width: 60px" type="quantity" name="quantity" [(ngModel)]="quantity"  id="quantity" class="form-control quantity">
                             </div>
                         </div>
                     </div>
@@ -68,7 +67,6 @@
             </div>
         </div>
         <!-- end product -->
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-    </div>
   </ng-template>
+
+  

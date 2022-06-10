@@ -32,7 +32,9 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-
+.nav-link-text:hover {
+    color: #ed8bf5;
+}
 
 #social-icons {
     font-style: normal;
@@ -50,3 +52,4 @@
   .feature-box-1 .icon em {
     line-height: 70px;
   }
+  

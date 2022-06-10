@@ -33,7 +33,6 @@ export class StarRatingsComponent implements OnInit {
         startArray.push("bi bi-star");
       }
     }
-    console.log(startArray);
     return startArray;
 }
 

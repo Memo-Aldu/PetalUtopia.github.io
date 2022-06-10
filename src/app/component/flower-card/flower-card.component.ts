@@ -22,7 +22,7 @@ export class FlowerCardComponent implements OnInit {
 
   onClickMoreInfo() {
     this.sharedFlower.changeCard(this.flowerCard);
-    this.modalService.open("more-flower-info");
+    this.modalService.open(this.flowerCard.src);
   }
 
 }

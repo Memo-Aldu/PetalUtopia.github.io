@@ -1,0 +1,53 @@
+
+<app-nav-bar></app-nav-bar>
+<div class="container">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <span class="pull-right">(<strong>{{cart.length}}</strong>) items</span>
+                    <app-alert *ngIf="cart.length == 0;" [message]="alertMessage"></app-alert>
+                    <h5>Items in your cart</h5>
+                </div>
+                <div class="" *ngFor="let product of cart">
+                    <app-product-card (productUpdateEvent)="updateCart($event)" [product]="product"></app-product-card>
+                </div>
+                <div class="ibox-content">
+                    <button class="btn btn-success pull-right"><i class="fa fa fa-shopping-cart"></i> Checkout</button>
+                    <a (click)="onClear()" class="mx-2 pull-right btn btn btn-outline-danger">Clear Cart</a>
+                    <button routerLink="" class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Cart Summary</h5>
+                </div>
+                <div class="ibox-content">
+                    <span>
+                        Total
+                    </span>
+                    <h2 class="font-bold">
+                        {{totalBeforeTax}}$
+                    </h2>
+                </div>
+            </div>
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Support</h5>
+                </div>
+                <div class="ibox-content text-center">
+                    <h3><i class="fa fa-phone"></i> +1 613 683 111</h3>
+                    <span class="small">
+                        Please contact with us if you have any questions.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<app-page-footer></app-page-footer>

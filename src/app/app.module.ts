@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
-import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,11 @@ import { ServiceCardsComponent } from './component/service-cards/service-cards.c
 import { AboutPageComponent } from './pages/about/about-page.component';
 import { LocationCardComponent } from './component/location-card/location-card.component';
 import { ModalComponent } from './component/modal/modal.component';
+import { MessageModalComponent } from './component/message-modal/message-modal.component';
+import { ShoppingCartIconComponent } from './component/shopping-cart-icon/shopping-cart-icon.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { ProductCardComponent } from './component/product-card/product-card.component';
+import { AlertComponent } from './component/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +45,11 @@ import { ModalComponent } from './component/modal/modal.component';
     AboutPageComponent,
     LocationCardComponent,
     ModalComponent,
+    MessageModalComponent,
+    ShoppingCartIconComponent,
+    CheckoutComponent,
+    ProductCardComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +57,8 @@ import { ModalComponent } from './component/modal/modal.component';
     NgbModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MdbCheckboxModule
+    MdbCheckboxModule,
+    FormsModule
 
   ],
   providers: [],

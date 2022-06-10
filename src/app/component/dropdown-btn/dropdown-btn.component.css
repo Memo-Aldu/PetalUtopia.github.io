@@ -3,7 +3,15 @@
     width: 100%;
 }
 
+#dropdown-1 {
+    color: white;
+}
+
 #drop-item-text :hover {
+    color: #ed8bf5;
+}
+
+#dropdown-1:hover {
     color: #ed8bf5;
 }
 

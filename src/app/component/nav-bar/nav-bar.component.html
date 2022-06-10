@@ -6,12 +6,12 @@
                     Ontario's Best Flower Delivery
                 </p>
             </div>
-            <div class="m-2 d-none d-sm-flex top-right-text">
+            <div  class="m-2 d-none d-sm-flex top-right-text">
                 <p class="fw-bold"> 
                     +1 613-555-5555
                 </p>
             </div>
-            <div class="m-2">
+            <div routerLink="/about" class="m-2">
                 <a class="fw-bold text-decoration-none top-right-text"> 
                     Hours & Locations
                 </a>
@@ -31,6 +31,9 @@
                     Memo's Story
                 </span>
             </a>
+            <span class="justify-content-start align-center d-lg-none d-block">
+                <app-shopping-cart-icon></app-shopping-cart-icon>
+            </span>
             <!--toggle button for mobile nav-->
             <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" 
             data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
@@ -77,7 +80,8 @@
                 </ul>
             </div>
             <!--social icons-->
-            <div class="justify-content-end align-center d-none d-lg-block">
+            <div class="justify-content-end align-center d-none d-lg-flex">
+                <app-shopping-cart-icon id="social-icons" class="mx-3"></app-shopping-cart-icon>
                 <em class="bi bi-facebook" id="social-icons"></em>
                 <em class="bi bi-instagram" id="social-icons"></em>
                 <em class="bi bi-person-circle" id="social-icons"></em>

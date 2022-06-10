@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col">
       <div ngbDropdown class="w-220px d-flex ">
-        <a class="text-decoration-none text-white" id="dropdownBasic1" ngbDropdownToggle>{{dropdownBtn.btnName}}</a>
-        <div placement="top-end" class="dropdown-menu-dark dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <a class="text-decoration-none" id="dropdown-1" ngbDropdownToggle>{{dropdownBtn.btnName}}</a>
+        <div placement="top-end" class="dropdown-menu-dark dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdown-1">
             <div class="" id="drop-item-text" *ngFor="let dropBtnName of dropdownBtn.btnNames">
                 <a href="#album" class= "rounded-2" ngbDropdownItem (click)="onFilter(dropBtnName)">{{dropBtnName}}</a>
             </div>
