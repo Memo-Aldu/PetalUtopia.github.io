@@ -1,0 +1,11 @@
+<form>
+    <div class="mb-3">
+      <label for="dateOfBirth">{{name}}</label>
+      <div class="input-group">
+        <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+        <button class="btn btn-outline-primary calendar" (click)="dp.toggle()" type="button">
+            <i class="bi bi-calendar"></i>
+        </button>
+      </div>
+    </div>
+</form>

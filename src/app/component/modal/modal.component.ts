@@ -2,7 +2,6 @@ import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit } from '
 import { NgbModalConfig, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { SharedService } from 'src/app/services/shared.service';
 import { IFlowerCard } from 'src/app/models/IFlowerCard';
-import { IStarRating } from 'src/app/models/IStarRating';
 import { IProduct } from 'src/app/models/IProduct';
 import { ModalService } from 'src/app/services/modal.service';
 import { CartService } from 'src/app/services/cart.service';

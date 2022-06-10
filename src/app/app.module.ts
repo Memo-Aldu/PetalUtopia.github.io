@@ -27,6 +27,8 @@ import { ShoppingCartIconComponent } from './component/shopping-cart-icon/shoppi
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { ProductCardComponent } from './component/product-card/product-card.component';
 import { AlertComponent } from './component/alert/alert.component';
+import { CalenderComponent } from './component/calender/calender.component';
+import { EventModalComponent } from './component/event-modal/event-modal.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { AlertComponent } from './component/alert/alert.component';
     CheckoutComponent,
     ProductCardComponent,
     AlertComponent,
+    CalenderComponent,
+    EventModalComponent
   ],
   imports: [
     BrowserModule,

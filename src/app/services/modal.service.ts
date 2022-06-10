@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
+import { EventModalComponent } from '../component/event-modal/event-modal.component';
+import { MessageModalComponent } from '../component/message-modal/message-modal.component';
 import { ModalComponent } from '../component/modal/modal.component';
+import { IServiceOffered } from '../component/service-cards/service-cards.component';
 
 @Injectable({
   providedIn: 'root'
@@ -7,9 +10,19 @@ import { ModalComponent } from '../component/modal/modal.component';
 export class ModalService {
 
   private modals: ModalComponent[] = [];
+  private messageModal!: MessageModalComponent;
+  private eventModal!: EventModalComponent;
 
      next(modal: ModalComponent) {
         this.modals.push(modal);
+    }
+
+    nextMessageModal(messageModal: MessageModalComponent) {
+        this.messageModal = messageModal;
+    }
+
+    nextEventModal(eventModal: EventModalComponent) {
+        this.eventModal = eventModal;
     }
 
     remove(id: string) {
@@ -19,6 +32,14 @@ export class ModalService {
     open(id: string) {
         let modal: any = this.modals.filter(x => x._id === id)[0];
         modal.open();
+    }
+
+    openMessageModal() {
+        this.messageModal.open();
+    }
+
+    openEventModal(service: IServiceOffered) {
+        this.eventModal.open(service);
     }
 
     close(id: string) {

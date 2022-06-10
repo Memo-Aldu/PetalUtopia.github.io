@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from "aos"
+import { ModalService } from 'src/app/services/modal.service';
 
 
 
@@ -10,11 +10,14 @@ import * as AOS from "aos"
   styleUrls: ['./page-footer.component.css']
 })
 export class PageFooterComponent implements OnInit {
-  faCoffee = faCoffee;
-  constructor() { }
+  constructor(private modalService: ModalService) { }
 
   ngOnInit(): void {
     AOS.init();
+  }
+
+  onSubscribe() {
+    this.modalService.openMessageModal();
   }
 
 }

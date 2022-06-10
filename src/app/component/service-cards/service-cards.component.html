@@ -1,4 +1,4 @@
-
+<app-event-modal></app-event-modal>
 <div class="container-lg">
         <div class="row mt-5">
             <div class="col-lg-6">
@@ -17,32 +17,32 @@
                         </div>
                         <div class="feature-content">
                             <h5>Flower Delivery</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, illo. Fugit beatae cum error adipisci?</p>
+                            <p>We provide fast and carful delivery of the most beautiful flowers, so that you can enjoy their arrival!</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-9 col-lg-4">
+                <div (click)="onServiceSelected('Event Planning')" class="col-9 col-lg-4">
                     <div class="card border-primary border-2 feature-box-2 feature-box-common">
                         <div class="card-header text-center text-primary">Most Popular</div>
                         <div class="icon mid-icon">
                             <em class="bi bi-calendar3-event"></em>
                         </div>
                         <div class="feature-content mid-text">
-                            <h5>Event Planning</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi sunt laudantium molestias dolore molestiae!</p>
+                            <h5>{{eventServices.serviceName}}</h5>
+                            <p>{{eventServices.serviceDescription}}</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-8 col-lg-4 col-xl-3">
+                <div (click)="onServiceSelected('Custom Bouquet')" class="col-8 col-lg-4 col-xl-3">
                     <div class="card border-0 feature-box-1 feature-box-common">
                         <div class="icon">
                             <i class="fa fa-comment"></i>
                         </div>
                         <div class="feature-content">
-                            <h5>Custom Bouquet</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi sunt laudantium molestias dolore molestiae!</p>
+                            <h5>{{customBouquetServices.serviceName}}</h5>
+                            <p>{{customBouquetServices.serviceDescription}}</p>
                         </div>
                     </div>
                 </div>
@@ -50,36 +50,3 @@
         </div>
 </div>
 
-<!-- <div class="card col-8 col-lg-4 col-xl-3">
-    <div class="card-body feature-box-1">
-        <div class="icon">
-            <em class="bi bi-truck"></em>
-        </div>
-        <div class="feature-content">
-            <h5>Flower Delivery</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, illo. Fugit beatae cum error adipisci?</p>
-        </div>
-    </div>
-</div>
-<div class="col-9 col-lg-4">
-    <div class="feature-box-1">
-        <div class="icon">
-            <em class="bi bi-calendar3-event"></em>
-        </div>
-        <div class="feature-content">
-            <h5>Event Planning</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi sunt laudantium molestias dolore molestiae!</p>
-        </div>
-    </div>
-</div>
-<div class="col-8 col-lg-4 col-xl-3">
-    <div class="feature-box-1">
-        <div class="icon">
-            <i class="fa fa-comment"></i>
-        </div>
-        <div class="feature-content">
-            <h5>Custom Bouquet</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi sunt laudantium molestias dolore molestiae!</p>
-        </div>
-    </div>
-</div> -->

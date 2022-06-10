@@ -44,7 +44,7 @@
                     </span>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                 </div>
-                <button class="btn btn-primary" type="button">Subscribe</button>
+                <button (click)="onSubscribe()" class="btn btn-primary" type="button">Subscribe</button>
             </div>
           </form>
         </div>
@@ -61,3 +61,4 @@
       </div>
     </footer>
   </div>
+<app-message-modal title="Subscription Successful" message="Thank you for subscription to our monthly newsletter!"></app-message-modal>

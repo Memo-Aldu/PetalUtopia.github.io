@@ -12,7 +12,7 @@ export class AlertComponent implements OnInit {
   private _success = new Subject<string>();
 
   staticAlertClosed = false;
-  @Input() message!: string;
+  @Input() Successful!: string;
 
   @ViewChild('staticAlert', {static: false}) staticAlert!: NgbAlert;
   @ViewChild('selfClosingAlert', {static: false}) selfClosingAlert!: NgbAlert;
@@ -20,7 +20,7 @@ export class AlertComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => this.staticAlert.close(),5000);
 
-    this._success.subscribe(message => this.message = message);
+    this._success.subscribe(message => this.Successful = message);
     this._success.pipe(debounceTime(5000)).subscribe(() => {
       if (this.selfClosingAlert) {
         this.selfClosingAlert.close();

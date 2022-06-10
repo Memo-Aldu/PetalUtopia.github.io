@@ -1,0 +1,60 @@
+<div class="container-xl mt-5">
+    <app-alert  *ngIf="IsBookedService" Successful="Appointment Booked Successfully!"></app-alert>
+</div>
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Book A {{service.serviceName}} Consultation</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <div class="col-12 order-md-1">
+            <form>
+                <div class="row">
+                    <div class="col-lg-8 col-12 justify-content-between">
+                        <div class="row ibox-content">
+                            <div class="col-lg-6 col-12 mb-3 ">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            </div>
+                            <div class="col-lg-6 col-12 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            </div>
+                        </div>
+                        <div class="row ibox-content">
+                            <div class="col-lg-6 col-12 mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            </div>
+                            <div class="col-lg-6 col-12 mb-3">
+                                <label for="lastName">Phone number</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            </div>
+                        </div>
+                        <div class="row ibox-content">
+                            <div class="col-lg-6 col-12 mb-3 ">
+                                <app-calender></app-calender>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-3">
+                                <label for="lastName">Time</label>
+                                <input type="text" class="form-control"  id="lastName" placeholder="14:00" value="" required="">
+                            </div>
+                        </div>
+                        <div class="row ibox-content">
+                            <div class="col-lg-6 col-12 mt-4">
+                                <button (click)="d('Cross click')" (click)="onBooking()" id="checkout-btn" class="btn">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class=" row form-floating mx-2 mt-4">
+                            <textarea  id="message" class="form-control"></textarea>
+                            <label for="message" >{{service.serviceMessage}}</label>
+                        </div>
+                    
+                    </div>               
+                </div>
+            </form>
+        </div>
+    </div>
+</ng-template>

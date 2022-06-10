@@ -7,14 +7,14 @@
             <div class="ibox">
                 <div class="ibox-title">
                     <span class="pull-right">(<strong>{{cart.length}}</strong>) items</span>
-                    <app-alert *ngIf="cart.length == 0;" [message]="alertMessage"></app-alert>
+                    <app-alert *ngIf="cart.length == 0;" [Successful]="alertMessage"></app-alert>
                     <h5>Items in your cart</h5>
                 </div>
                 <div class="" *ngFor="let product of cart">
                     <app-product-card (productUpdateEvent)="updateCart($event)" [product]="product"></app-product-card>
                 </div>
                 <div class="ibox-content">
-                    <button class="btn btn-success pull-right"><i class="fa fa fa-shopping-cart"></i> Checkout</button>
+                    <button id="checkout-btn"(click)="onCheckout()" class="btn btn-success pull-right"><i class="fa fa fa-shopping-cart"></i> Checkout</button>
                     <a (click)="onClear()" class="mx-2 pull-right btn btn btn-outline-danger">Clear Cart</a>
                     <button routerLink="" class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
                 </div>
@@ -50,4 +50,187 @@
     </div>
 </div>
 </div>
+<div class="container " *ngIf="isCheckout" >
+    <div class="col-12 order-md-1">
+        <h5 class="mb-3 ibox-title">Billing address</h5>
+        <form class="needs-validation" novalidate="">
+            <div class="row ibox-content">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                </div>
+            </div>
+            <div class="mb-3 ibox-content">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+            <div class="mb-3 ibox-content">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h5 class="mb-3 ibox-title">Shipping</h5>
+        <div class="row">
+
+          <div class="col">
+            <div class="accordion" id="accordionPayment">
+                
+              <div class="accordion-item mb-3">
+                <h2 class="h5 px-4 py-3 accordion-header d-flex justify-content-between align-items-center">
+                  <div class="form-check w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCC" aria-expanded="false">
+                    <input (click)="onClickOpenAccordion()" class="form-check-input" type="radio" name="payment" id="payment1" checked>
+                    <label class="form-check-label pt-1" for="payment1">
+                      Delivery Service
+                    </label>
+                  </div>
+                  <span>
+                    <em style="width: 50px; height: 50px;" class="bi bi-truck"></em>
+                  </span>
+                </h2>
+                <div *ngIf="!checkoutService;" id="collapseCC" class="accordion-collapse collapse show" data-bs-parent="#accordionPayment" style="">
+                  <div class="accordion-body">
+                    <div class="row ibox-content">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Recipient's name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Recipient's Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="mb-3">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            </div>
+                            <div class="col">
+                                <div class=" row justify-content-between">
+                                    <div class="col-md-3 mb-3">
+                                        <label for="zip">Country</label>
+                                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                     <label for="zip">City</label>
+                                     <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="zip">Postal Code</label>
+                                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col">
+                                <app-calender name="Date of delivery"></app-calender>
+                            </div>
+                            </div> 
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 border">
+                <h2 class="h5 px-4 py-3 accordion-header d-flex justify-content-between align-items-center">
+                  <div class="form-check w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#collapsePP" aria-expanded="false">
+                    <input class="form-check-input" type="radio" name="payment" id="payment2" (click)="onClickOpenAccordion()">
+                    <label class="form-check-label pt-1" for="payment2">
+                      Pick Up Service
+                    </label>
+                  </div>
+                </h2>
+                <div *ngIf="checkoutService" id="collapsePP" class="accordion-collapse collapse show" data-bs-parent="#accordionPayment">
+                  <div class="accordion-body">
+                      
+                    <div class="row">
+                        <div class="col">
+                            <div class="ms-2 mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Downtown Ottawa
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Kanata
+                                    </label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col">
+                            <app-calender name="Date of pick up"></app-calender>
+                        </div>
+                        </div> 
+                      <div class="row justify-content-between">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <div class="col-12 order-md-1">
+            <div class="card">
+                <div class="card-header">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>CREDIT/DEBIT CARD PAYMENT</span>
+                        
+                    </div>
+                    <div class="col-md-6 text-right" style="margin-top: -5px;">
+
+                          <img src="https://img.icons8.com/color/36/000000/visa.png">
+                          <img src="https://img.icons8.com/color/36/000000/mastercard.png">
+                          <img src="https://img.icons8.com/color/36/000000/amex.png">
+                                   
+                    </div>      
+
+                </div>    
+
+                </div>
+                <div class="card-body" style="height: 350px">
+                    <div class="form-group">
+                    <label for="cc-number" class="control-label">CARD NUMBER</label>
+                    <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;" required>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-6">
+                         <div class="form-group">
+                            <label for="cc-exp" class="control-label">CARD EXPIRY</label>
+                            <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="&bull;&bull; / &bull;&bull;" required>
+                          </div>
+                    </div>
+
+                     <div class="col-md-6">
+                       <div class="form-group">
+                        <label for="cc-cvc" class="control-label">CARD CVC</label>
+                        <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="&bull;&bull;&bull;&bull;" required>
+                      </div>
+                    </div>
+                      
+                  </div>
+                   <div class=" col-md-4 col-12 form-group mt-4">
+                    <button (click)="onPayment()" class="btn btn-success btn-lg form-control" style="font-size: .8rem;">MAKE PAYMENT</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+</div>
+<app-message-modal title="Thank You!" message="Your order has been placed successfully."></app-message-modal>
+
 <app-page-footer></app-page-footer>

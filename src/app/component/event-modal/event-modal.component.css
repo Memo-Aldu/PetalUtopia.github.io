@@ -1,0 +1,18 @@
+#message {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1rem;
+    height: 180px;
+}
+.ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+  }
+#checkout-btn {
+    color: white;
+    background-color: #ed8bf5;
+}
