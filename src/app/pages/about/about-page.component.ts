@@ -31,12 +31,12 @@ export class AboutPageComponent implements OnInit {
 
   protected locations: IStoreLocation[] = [
     {
-      src: "/assets/Location/location-1.jpg",
+      src: "assets/Location/location-1.jpg",
       address: "912 Bank St Ottawa, ON K5F 0D2",
       locationName: "Downtown Ottawa",
     },
     {
-      src: "/assets/Location/location-2.jpg",
+      src: "assets/Location/location-2.jpg",
       address: "912 Bank St Ottawa, ON K5F 0D2",
       locationName: "Kanata",
     }
