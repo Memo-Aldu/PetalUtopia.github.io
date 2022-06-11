@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/PetalUtopia.github.io/",
+            "baseHref": "/flowersON.github.io/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
