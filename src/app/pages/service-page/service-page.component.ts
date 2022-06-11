@@ -15,12 +15,12 @@ export class ServicePageComponent implements OnInit {
   constructor(private flowerFilerServiceService: FlowerFilerServiceService) { }
 
   ngOnInit(): void {
-    this.flowerCards = this.flowerFilerServiceService.getCardMatrix(3, 2);
   }
+    
 
   applyFilter(filter: string) {
-    this.flowerCards = this.flowerFilerServiceService.getFlowerCardsFiltered(3,filter);
-  }
+    this.flowerFilerServiceService.nextCardMatrixFiltered(3,filter);
+}
 
   onServiceBooked(event:any) {
     console.log(event);

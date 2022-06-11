@@ -10,8 +10,8 @@ import { ModalService } from 'src/app/services/modal.service';
 })
 export class MessageModalComponent implements OnInit {
 
-  @Input() message!: string;
-  @Input() title!: string;
+  protected message!: string;
+  protected title!: string;
 
   @ViewChild("content", { static: true }) content!: ElementRef;
   constructor(config: NgbModalConfig, private ngbModalService: NgbModal, private modalService: ModalService) {
@@ -24,7 +24,9 @@ export class MessageModalComponent implements OnInit {
     
   }
 
-  open() {
+  open(title: string, message: string) {
+    this.title = title;
+    this.message = message;
     this.ngbModalService.open(this.content);
   }
 }

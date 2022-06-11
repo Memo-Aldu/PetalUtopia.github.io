@@ -10,15 +10,13 @@ import { FlowerFilerServiceService } from 'src/app/services/flower-filer-service
 })
 export class DropdownBtnComponent implements OnInit {
   @Input() dropdownBtn!: IDropDownBtn;
-  @Output() onClickFilter = new EventEmitter<string>();
-
   constructor(private flowerFilerServiceService: FlowerFilerServiceService) { }
 
   ngOnInit(): void {
   }
 
-  onFilter(filter: string) {
-    this.onClickFilter.emit(filter)
+  applyFilter(filter: string) {
+    this.flowerFilerServiceService.nextCardMatrixFiltered(3,filter);
   }
 
 }

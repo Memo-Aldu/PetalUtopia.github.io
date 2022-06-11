@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import flowerCards from "src/assets/flower-card/flowerCards.json"
 import { IFlowerCard } from '../models/IFlowerCard';
 
@@ -6,46 +7,61 @@ import { IFlowerCard } from '../models/IFlowerCard';
   providedIn: 'root'
 })
 export class FlowerFilerServiceService {
-  protected flowerCards: IFlowerCard[] = flowerCards;
+  protected jsonFlowerCards: IFlowerCard[] = flowerCards;
+  protected cardMatrix: IFlowerCard[][] = [];
+  private flowerCards = new BehaviorSubject<IFlowerCard[][]>(this.cardMatrix);
+
   constructor() { }
 
-  public getCardMatrix(col:number, row:number): IFlowerCard[][] {
-    let cardMatrix: IFlowerCard[][] = [];
+  getCards() {
+    return this.flowerCards.asObservable();
+  }
+
+
+  public nextCardMatrix(col:number, row:number) {
+    this.cardMatrix = [];
     let selectedFlowerIndex: number[] = [];
     for(let i = 0; i < row; i++) {
-      cardMatrix[i] =[];
+      this.cardMatrix[i] =[];
       for(let j = 0; j < col; j++) {
         let randomFlowerCardIndex = this.getRandomFlowerCardIndex();
         while(this.checkIfFlowerIsUsed(randomFlowerCardIndex, selectedFlowerIndex)) {
           randomFlowerCardIndex = this.getRandomFlowerCardIndex();
         }
         selectedFlowerIndex.push(randomFlowerCardIndex);
-        cardMatrix[i][j] = (this.flowerCards[randomFlowerCardIndex]);
+        this.cardMatrix[i][j] = (this.jsonFlowerCards[randomFlowerCardIndex]);
       }
     }
-    return cardMatrix;
+    this.flowerCards.next(this.cardMatrix);
   }
 
-  public getFlowerCardsFiltered(col:number, filter:string): IFlowerCard[][] {
-    let cardMatrix: IFlowerCard[][] = [];
+  public nextCardMatrixFiltered(col:number, filter:string) {
     let index = 0, row = 0;
+    let isFiltered = false;
+    this.cardMatrix = [];
     let filteredFlowers: IFlowerCard[] = this.getFilteredFlowerCards(filter);
     row = Math.ceil(filteredFlowers.length / col);
     for(let i = 0; i < row; i++) {
-      cardMatrix[i] =[];
-      for(let j = 0; j < col; j++) {
-        if(index === filteredFlowers.length) {
-          return cardMatrix;
+      if(!isFiltered ) {
+        this.cardMatrix[i] =[];
+        for(let j = 0; j < col; j++) {
+          if(index === filteredFlowers.length) {
+            isFiltered= true;
+            break;
+          }
+          this.cardMatrix[i][j] = filteredFlowers[index];
+          index++;
         }
-        cardMatrix[i][j] = filteredFlowers[index];
-        index++;
+      }
+      else {
+        break;
       }
     }
-    return cardMatrix;
+    this.flowerCards.next(this.cardMatrix);
   }
 
   private getRandomFlowerCardIndex(): number {
-    return Math.floor(Math.random() * this.flowerCards.length);
+    return Math.floor(Math.random() * this.jsonFlowerCards.length);
   }
 
   private checkFilter(flower:IFlowerCard, filter:string): boolean {
@@ -62,7 +78,7 @@ export class FlowerFilerServiceService {
 
   private getFilteredFlowerCards(filter: string): IFlowerCard[] {
     let filteredFlowers: IFlowerCard[] = [];
-    for(let flower of this.flowerCards) {
+    for(let flower of this.jsonFlowerCards) {
       if(this.checkFilter(flower, filter)) {
         filteredFlowers.push(flower);
       }

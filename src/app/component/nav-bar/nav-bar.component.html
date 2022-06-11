@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse justify-content-lg-start justify-content-md-end pt-2" id="main-nav" [ngClass]="{'d-block' : navbarOpen }">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a routerLink="" class="nav-link">
+                        <a routerLink="home" class="nav-link">
                             <span class="nav-link-text">
                                 Home
                             </span>
@@ -53,13 +53,13 @@
                     <!--Dropdown-->
                     <li class="nav-item ">
                         <div class="nav-link">
-                            <app-dropdown-btn (onClickFilter)="applyFilter($event)" class="nav-link-text" [dropdownBtn]="occasions" ></app-dropdown-btn>
+                            <app-dropdown-btn class="nav-link-text" [dropdownBtn]="occasions" ></app-dropdown-btn>
                         </div>
                     </li>
                     <!--Dropdown-->
                     <li class="nav-item ">
                         <div class="nav-link">
-                            <app-dropdown-btn (onClickFilter)="applyFilter($event)" class="nav-link-text" [dropdownBtn]="flowers" ></app-dropdown-btn>
+                            <app-dropdown-btn class="nav-link-text" [dropdownBtn]="flowers" ></app-dropdown-btn>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -81,8 +81,8 @@
             <!--social icons-->
             <div class="justify-content-end align-center d-none d-lg-flex">
                 <app-shopping-cart-icon id="social-icons" class="mx-3"></app-shopping-cart-icon>
-                <em class="bi bi-facebook" id="social-icons"></em>
-                <em class="bi bi-instagram" id="social-icons"></em>
+                <a href="https://www.facebook.com/MarsanoBerlin"><em class="bi bi-facebook" id="social-icons"></em></a>
+                <a href="https://www.instagram.com/marsanoberlin/"><em class="bi bi-instagram" id="social-icons"></em></a>
                 <em class="bi bi-person-circle" id="social-icons"></em>
             </div>
         </div>

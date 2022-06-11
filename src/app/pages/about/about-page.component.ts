@@ -11,23 +11,6 @@ import { FlowerFilerServiceService } from 'src/app/services/flower-filer-service
 })
 export class AboutPageComponent implements OnInit {
   protected flowerCards!: IFlowerCard[][];
-  protected slides: IDocument[] = [
-    {
-      src: "assets/homeCarousel/slide-1.jpg",
-      title: "Pink Peonies",
-      description: "hi."
-    },
-    {
-      src: "assets/homeCarousel/slide-2.jpg",
-      title: "Colorful Flowers",
-      description: "hi2."
-    },
-    {
-      src: "assets/homeCarousel/slide-3.jpg",
-      title: "Colorful Flowers",
-      description: "hi2."
-    }
-  ];
 
   protected locations: IStoreLocation[] = [
     {
@@ -49,7 +32,7 @@ export class AboutPageComponent implements OnInit {
   }
 
   applyFilter(filter: string) {
-    this.flowerCards = this.flowerFilerServiceService.getFlowerCardsFiltered(3,filter);
+    this.flowerFilerServiceService.nextCardMatrixFiltered(3,filter);
   }
   
   scroll(el: HTMLElement) {

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IDocument } from 'src/app/models/IDocument';
-import { trigger, transition, style, animate, useAnimation } from "@angular/animations";
+import { interval, Subscription } from 'rxjs';
 
 
 @Component({
@@ -10,13 +10,23 @@ import { trigger, transition, style, animate, useAnimation } from "@angular/anim
 })
 export class CarouselComponent implements OnInit {
   @Input() slides!: IDocument[];
+  private subscription!: Subscription;
   currentIndexToShow:number = 0;
   
-  constructor() { }
+  constructor() {
+   }
 
-  ngOnInit(): void {
+
+   ngOnDestroy() {
+    this.subscription && this.subscription.unsubscribe();
   }
 
+  ngOnInit(): void {
+    const source = interval(8000);
+    const text = 'Your Text Here';
+    this.subscription = source.subscribe(() => this.nextImg());
+
+  }
   nextImg() {
     if(this.currentIndexToShow < this.slides.length - 1) {
       this.currentIndexToShow++;

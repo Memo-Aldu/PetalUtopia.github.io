@@ -10,14 +10,16 @@ import { ModalService } from 'src/app/services/modal.service';
   styleUrls: ['./page-footer.component.css']
 })
 export class PageFooterComponent implements OnInit {
-  constructor(private modalService: ModalService) { }
+  constructor(private modalService : ModalService) { }
 
   ngOnInit(): void {
     AOS.init();
   }
 
   onSubscribe() {
-    this.modalService.openMessageModal();
+    this.modalService.openMessageModal(
+      "Subscription Successful","Thank you for subscription to our monthly newsletter!"
+    );
   }
 
 }

@@ -43,7 +43,7 @@ export class CheckoutComponent implements OnInit {
     this.totalBeforeTax = 0;
     this.isCheckout = false;
     this.checkoutService = false;
-    this.modalService.openMessageModal();
+    this.modalService.openMessageModal("Thank You!", "Your order has been placed successfully.");
   }
 
   onClickOpenAccordion() {

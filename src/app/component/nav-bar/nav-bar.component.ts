@@ -7,7 +7,6 @@ import { IDropDownBtn } from 'src/app/models/IDropDownBtn';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  @Output() onClickFilter = new EventEmitter<string>();
    protected navbarOpen: boolean = false;
    protected occasions: IDropDownBtn = {
      btnName:  "Occasions",
@@ -25,10 +24,6 @@ export class NavBarComponent implements OnInit {
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
-  }
-
-  applyFilter(filter: string) {
-    this.onClickFilter.emit(filter); 
   }
 
 }

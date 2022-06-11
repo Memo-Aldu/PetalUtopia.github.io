@@ -13,6 +13,8 @@ export class ModalService {
   private messageModal!: MessageModalComponent;
   private eventModal!: EventModalComponent;
 
+  
+
      next(modal: ModalComponent) {
         this.modals.push(modal);
     }
@@ -34,8 +36,8 @@ export class ModalService {
         modal.open();
     }
 
-    openMessageModal() {
-        this.messageModal.open();
+    openMessageModal(title:string, message:string) {
+        this.messageModal.open(title, message);
     }
 
     openEventModal(service: IServiceOffered) {

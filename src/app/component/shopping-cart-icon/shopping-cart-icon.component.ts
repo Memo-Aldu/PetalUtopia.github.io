@@ -4,19 +4,19 @@ import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-shopping-cart-icon',
-  template: `<span routerLink="/checkout" #content class="fa badge" style="font-size:24px" id="{{cartItems}}">&#xf07a;</span>`,
+  template: `<em routerLink="/checkout" id="cart-icon" #content class="fa badge" style="font-size:24px" id="{{cart.length}}">&#xf07a;</em>`,
   styleUrls: ['./shopping-cart-icon.component.css']
 })
 export class ShoppingCartIconComponent implements OnInit {
   @ViewChild('content') content!: ElementRef;
 
-  private cart: any[] = [];
+  protected cart: any[] = [];
   cartItems: number = 0;
   constructor(private cartService: CartService, private el: ElementRef) {
    }
 
   ngOnInit(): void {
-    this.cartService.getProducts().subscribe(cart => this.cartItems = cart.length);
+    this.cartService.getProducts().subscribe(cart => this.cart = cart);
   }
 
 }

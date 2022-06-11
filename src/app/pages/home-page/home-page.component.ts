@@ -13,6 +13,11 @@ export class HomePageComponent implements OnInit {
   protected flowerCards!: IFlowerCard[][];
   protected slides: IDocument[] = [
     {
+      src: "assets/homeCarousel/slide-4.jpg",
+      title: "Pink Peonies",
+      description: "hi."
+    },
+    {
       src: "assets/homeCarousel/slide-1.jpg",
       title: "Pink Peonies",
       description: "hi."
@@ -31,11 +36,14 @@ export class HomePageComponent implements OnInit {
   constructor(private flowerFilerServiceService: FlowerFilerServiceService) { }
 
   ngOnInit(): void {
-    this.flowerCards = this.flowerFilerServiceService.getCardMatrix(3, 2);
+    this.flowerFilerServiceService.getCards().subscribe(flowerCards => this.flowerCards = flowerCards);
+    if(this.flowerCards.length === 0) {
+      this.flowerFilerServiceService.nextCardMatrix(3,2);
+    }
   }
 
   applyFilter(filter: string) {
-    this.flowerCards = this.flowerFilerServiceService.getFlowerCardsFiltered(3,filter);
+    this.flowerFilerServiceService.nextCardMatrixFiltered(3,filter);
   }
   
   scroll(el: HTMLElement) {

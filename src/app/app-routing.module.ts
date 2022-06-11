@@ -1,3 +1,4 @@
+import { FlowerAlbumComponent } from './component/flower-album/flower-album.component';
 import { HomePageComponent } from './pages/home-page';
 import { ServicePageComponent } from './pages/service-page';
 import {CheckoutComponent} from './pages/checkout';
@@ -9,10 +10,15 @@ import { AboutPageComponent } from './pages/about';
 
 const routes: Routes = [
   {path: 'services', component: ServicePageComponent},
-  {path: '', component: HomePageComponent},
+  {path: 'home',component: HomePageComponent,
+  children: [
+    {
+      path: 'flowers', component: FlowerAlbumComponent
+    }
+  ]},
   {path: 'about', component:AboutPageComponent },
   {path: 'checkout', component: CheckoutComponent},
-  {path: '**', redirectTo: ''}
+  {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({

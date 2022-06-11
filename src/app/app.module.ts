@@ -63,7 +63,6 @@ import { EventModalComponent } from './component/event-modal/event-modal.compone
     FontAwesomeModule,
     MdbCheckboxModule,
     FormsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

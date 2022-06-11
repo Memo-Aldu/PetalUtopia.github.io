@@ -6,12 +6,15 @@
     color: #ed8bf5;
 }
 
-.nav-link {
-    color: #8a878a;
+#social-icons:hover{
+    color: #ed8bf5;
+}
+#social-icons{
+    color: #ffffff;
 }
 
-footer:hover {
-    animation:bounce-top .9s both
+.nav-link {
+    color: #8a878a;
 }
 
 @keyframes bounce-top {
