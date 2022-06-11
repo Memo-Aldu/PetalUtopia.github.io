@@ -10,7 +10,7 @@ import { AboutPageComponent } from './pages/about';
 
 const routes: Routes = [
   {path: 'services', component: ServicePageComponent},
-  {path: 'home',component: HomePageComponent,
+  {path: '',component: HomePageComponent,
   children: [
     {
       path: 'flowers', component: FlowerAlbumComponent
@@ -18,7 +18,7 @@ const routes: Routes = [
   ]},
   {path: 'about', component:AboutPageComponent },
   {path: 'checkout', component: CheckoutComponent},
-  {path: '**', redirectTo: 'home'}
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
